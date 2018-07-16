@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ $# = "2" ];
+if [ "$#" = "2" ];
 then
-	if [ -f $1 -a -r $1 ];
+	if [ -f "$1" ] && [ -r "$1" ];
 	then
-		if [[ $2 =~ ^[0-9]+$ ]];
+		if [[ "$2" =~ ^[0-9]+$ ]];
 		then
-			sort $1 | uniq -c | sort -nr | head -n $2;
+			sort "$1" | uniq -c | sort -nr | head -n "$2";
 			exit 0;
 		else
 			echo -e "INPUT ERROR:\n\tsecond argument is not a valid integer";

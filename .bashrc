@@ -3,7 +3,7 @@ export PAGER="most"
 export VISUAL="vim"
 export EDITOR="vim"
 export HISTCONTROL="ignoreboth:erasedups"
-export HISTTIMEFORMAT="%y/%m/%d %T "
+export HISTTIMEFORMAT="%F %T "
 alias ls='ls -lha --color=auto'
 alias dirs='dirs -v'
 alias free='free -h'

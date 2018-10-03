@@ -4,7 +4,7 @@ if [ "${#}" = "2" ];
 then
 	if [ -f "${1}" ] && [ -r "${1}" ];
 	then
-		if [[ "${2}" =~ ^[0-9]+$ ]];
+		if [[ "${2}" =~ ^[[:digit:]]+$ ]];
 		then
 			sort "${1}" | uniq -c | sort -nr | head -n "${2}";
 			exit 0;

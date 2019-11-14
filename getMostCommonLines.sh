@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# TODO
+#
+# readme.md
+# use colored output
+# parse arguments with getops
+
 if [ "${#}" = '2' ]
 then
 	if [ -f "${1}" ] && [ -r "${1}" ]

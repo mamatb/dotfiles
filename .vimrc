@@ -1,4 +1,5 @@
 :set scrolloff=4
+:set mouse=""
 :set nocompatible
 :set backspace=2
 :set autoindent

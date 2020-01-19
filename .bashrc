@@ -1,3 +1,8 @@
+if command -v tmux &> /dev/null && [ -n "${PS1}" ] && [[ ! "${TERM}" =~ screen ]] && [[ ! "${TERM}" =~ tmux ]] && [ -z "${TMUX}" ]
+then
+    exec tmux
+fi
+
 umask 0077
 export PAGER="most"
 export VISUAL="vim"

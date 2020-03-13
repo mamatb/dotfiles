@@ -15,14 +15,14 @@ then
 			sort "${1}" | uniq --count | sort --numeric-sort --reverse | head --lines "${2}"
 			exit 0
 		else
-			echo -e 'INPUT ERROR:\n\tsecond argument is not a valid integer'
+			echo -e 'INPUT ERROR:\n\tsecond argument is not a valid integer' >&2
 			exit 1
 		fi
 	else
-		echo -e 'INPUT ERROR:\n\tfirst argument is either not a regular file or not readable'
+		echo -e 'INPUT ERROR:\n\tfirst argument is either not a regular file or not readable' >&2
 		exit 1
 	fi
 else
-	echo -e 'SYNTAX ERROR. USAGE:\n\tgetMostCommonStrings.sh <filename> <number>'
+	echo -e 'SYNTAX ERROR. USAGE:\n\tgetMostCommonStrings.sh <filename> <number>' >&2
 	exit 1
 fi

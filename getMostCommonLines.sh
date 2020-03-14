@@ -6,7 +6,7 @@
 # use colored output
 # parse arguments with getops
 
-if [ "${#}" = '2' ]
+if [ ${#} -ne 2 ]
 then
 	if [ -f "${1}" ] && [ -r "${1}" ]
 	then

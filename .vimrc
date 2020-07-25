@@ -14,5 +14,6 @@
 :set tabstop=4
 :set shiftwidth=4
 :set expandtab
+:set term=xterm
 :syntax on
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!

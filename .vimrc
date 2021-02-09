@@ -7,7 +7,6 @@
 :set ignorecase
 :set hlsearch
 :set incsearch
-:set cursorline
 :set cm=blowfish2
 :set showmode
 :set undodir=${HOME}/.vim/undodir

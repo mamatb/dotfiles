@@ -7,7 +7,7 @@
 :set ignorecase
 :set hlsearch
 :set incsearch
-:set cm=blowfish2
+:set cryptmethod=blowfish2
 :set showmode
 :set undodir=${HOME}/.vim/undodir
 :set undofile
@@ -19,4 +19,4 @@
 :iabbrev py2bang #!/usr/bin/env python2
 :iabbrev py3bang #!/usr/bin/env python3
 :syntax on
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command W :execute ':silent write !sudo tee % > /dev/null' | :edit!

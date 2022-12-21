@@ -3,7 +3,7 @@ then
     exec tmux
 fi
 
-export PATH="${PATH}:${HOME}/go/bin"
+export PATH="${PATH}:/usr/local/go/bin:${HOME}/go/bin"
 
 umask 0077
 export PAGER='most'

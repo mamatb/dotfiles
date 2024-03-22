@@ -30,6 +30,5 @@ syntax enable
 
 " custom
 iabbrev shbang #!/usr/bin/env bash
-iabbrev py2bang #!/usr/bin/env python2
-iabbrev py3bang #!/usr/bin/env python3
+iabbrev pybang #!/usr/bin/env python3
 command W :execute ':silent write !sudo tee % > /dev/null' | :edit!

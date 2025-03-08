@@ -3,8 +3,6 @@ then
     exec tmux
 fi
 
-export PATH="${PATH}:/usr/local/go/bin:${HOME}/go/bin"
-
 umask 0077
 export PAGER='most'
 export VISUAL='vim'
@@ -27,4 +25,3 @@ alias xargs='xargs '
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
-alias myupdate='sudo apt update; sudo apt upgrade; sudo apt autoremove'

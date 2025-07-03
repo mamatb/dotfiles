@@ -1,4 +1,5 @@
 set nocompatible
+command W :execute ':silent write !sudo tee % > /dev/null' | :edit!
 
 " behaviour
 set backspace=2
@@ -27,8 +28,3 @@ set scrolloff=4
 set showmode
 set wildmenu
 syntax enable
-
-" custom
-iabbrev shbang #!/usr/bin/env bash
-iabbrev pybang #!/usr/bin/env python3
-command W :execute ':silent write !sudo tee % > /dev/null' | :edit!
